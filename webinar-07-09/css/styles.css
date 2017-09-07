@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://static.pexels.com/photos/34950/pexels-photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  width: 600px;
+  margin: auto;
+}
+
+/* --------------------------------------- */
+.display {
+  /* display: block | inline | inline-block */
+  display: inline-block;
+height: 100px;
+width: 200px;
+background-color: orange;
+margin-bottom: 20px;
+}
+
+h1 {
+  /* padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px; */
+
+  /* padding: 20px 10px 40px 30px; */
+  padding: 20px 50px;
+
+  /* margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 30px; */
+
+  /* margin: 20px 10px 40px 30px; */
+
+  margin: 0 30px 50px;
+  border: 5px solid brown;
+  outline: 5px solid blue;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  padding-top: 50px;
+  /* padding: 20px;
+  border: 10px solid red; */
+  background-color: #333;
+}
+
+.second-child {
+  margin-top: 20px;
+}
+
+.inner-box {
+  height: 50px;
+  width: 50px;
+  /* margin-top: 50px; */
+  background-color: yellow;
+}
+
+.article {
+  background-color: #ccc;
+}
+
+.blue {
+  color: blue;
+}
+
+.orange {
+  color: orange;
+}
+
+.red {
+  color: red;
+}
+
+
+.big-text {
+  font-size: 30px;
+}
+
+/* ------------------------ */
+.list {
+  background-color: #ccc;
+}
+
+
+.list-item {
+  background-color: brown;
+}
+
+.list-link {
+  color: #fefefe;
+}
+
+.list-link:hover {
+  background-color: aqua;
+}
+
+/* --------------------------- */
+
+.red, .blue {
+  background-color: orange;
+}
+
+
+/* --------------------------- */
+
+.parent-outer {
+  outline: 1px solid #333;
+  height: 400px;
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.inner {
+  outline: 1px solid #333;
+  height: 100px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  background-color: red;
+}
+
+.inner:first-child {
+  background-color: black;
+}
+
+.inner:last-child {
+margin-bottom: 0;
+}
+
+.blue-box {
+  outline: 1px solid #333;
+  height: 30px;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+  background-color: aqua;
+}
+
+/* .blue-box:first-child {
+  margin-top: 0;
+} */
+
+.blue-box:last-child {
+  margin-bottom: 0;
+}
+
+
+.margin-example {
+  width: 300px;
+  height: 100px;
+  background-color: #333;
+  margin: auto;
+}

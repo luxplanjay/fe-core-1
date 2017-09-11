@@ -1,0 +1,58 @@
+/* SIDEBAR */
+.sidebar {
+  display: inline-block;
+  width: 300px;
+  margin-right: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* SIDEBAR LIST */
+.list {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.list-item {
+  border: 1px solid #ccc;
+  border-bottom: 0;
+}
+
+.list-item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.list-link {
+  display: block;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list-link:hover {
+  text-indent: 16px;
+}
+
+/* SIDEBAR ICONS */
+.sidebar-icons {
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+
+.male {
+  background-image: url(https://image.flaticon.com/icons/svg/236/236832.svg);
+}
+
+.female {
+  background-image: url(https://image.flaticon.com/icons/svg/145/145852.svg);
+}
+
+.team {
+  background-image: url(https://image.flaticon.com/icons/svg/236/236822.svg);
+}

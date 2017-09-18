@@ -7,34 +7,31 @@
 
 .logo {
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
   background-image: url(../img/logo.png);
   background-size: cover;
 }
 
 .menu {
   float: right;
-  padding-top: 16px;
+  padding-top: 32px;
   list-style: none;
 }
 
 .menu-item {
   float: left;
-  margin-right: 10px;
-}
-
-.menu-item:last-child {
-  margin-right: 0;
 }
 
 .menu-link {
   border: 1px solid transparent;
   border-radius: 2px;
-  padding: 8px;
-  color: #333;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+  color: #333;
 }
 
 .menu-link:hover {

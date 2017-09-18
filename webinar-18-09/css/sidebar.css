@@ -1,14 +1,17 @@
 /* SIDEBAR */
+
 .sidebar {
   width: 300px;
   margin-right: 16px;
   padding: 8px;
   float: left;
   border-radius: 4px;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
+
 /* SIDEBAR LIST */
+
 .list {
   margin-bottom: 20px;
   list-style: none;
@@ -34,16 +37,16 @@
   text-indent: 16px;
 }
 
+
 /* SIDEBAR ICONS */
 .sidebar-icons {
   text-align: center;
 }
 
 .icon {
-  display: block;
-  height: 30px;
-  width: 30px;
-  float: left;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
 }
 
 .male {

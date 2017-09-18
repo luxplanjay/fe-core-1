@@ -1,0 +1,46 @@
+.gallery {
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-title {
+  font-size: 36px;
+}
+
+.gallery-body {
+  margin-top: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  float: left;
+  width: 33%;
+  margin-right: 0.5%;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.gallery-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.gallery-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fefefe;
+  font-size: 36px;
+  text-transform: uppercase;
+}

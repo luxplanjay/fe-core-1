@@ -1,0 +1,47 @@
+.page-header {
+  min-height: 400px;
+  padding: 20px;
+  background: linear-gradient(to right, #1B1B1E, #373F51);
+  background: url(../img/headline.jpg) no-repeat scroll top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.logo {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  background-image: url(../img/logo.png);
+  background-size: cover;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+  transition: all 1s ease-out;
+}
+
+.menu {
+  float: right;
+  padding-top: 32px;
+  list-style: none;
+}
+
+.menu-item {
+  float: left;
+}
+
+.menu-link {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.menu-link:hover {
+  border: 1px solid #fefefe;
+  transition: all 0.5s ease-out;
+}

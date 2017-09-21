@@ -4,13 +4,14 @@
 }
 
 .article {
-  padding: 8px;
   float: left;
   width: 432px;
   margin-right: 16px;
   margin-bottom: 16px;
+  padding: 8px;
   border-radius: 4px;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 .article:nth-child(2n) {
@@ -29,4 +30,9 @@
 
 .article-title {
   margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.article-text {
+  line-height: 1.5;
 }

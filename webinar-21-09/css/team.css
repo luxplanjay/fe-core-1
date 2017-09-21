@@ -1,0 +1,60 @@
+/* background-color: #e1e6ea; base*/
+/* background-color: #3a454d; accent*/
+
+.team-member {
+  position: relative;
+  width: 25%;
+  padding: 15px;
+  float: left;
+}
+
+.team-member:hover > .team-socials {
+  display: block;
+}
+
+.member-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.member-descr {
+  background-color: #3a454d;
+  color: #fefefe;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+  padding: 10px 0;
+}
+
+.member-pos {
+  display: block;
+}
+
+.team-socials {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+}
+
+.icon-facebook {
+  background-image: url(../img/team/facebook.svg);
+}
+
+.icon-linkedin {
+  background-image: url(../img/team/linkedin.svg);
+}
+
+.icon-twitter {
+  background-image: url(../img/team/twitter.svg);
+}

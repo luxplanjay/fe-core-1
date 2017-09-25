@@ -1,0 +1,22 @@
+.promo {
+  padding: 100px 0;
+  background-image: url(../img/promo-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-article {
+  width: 600px;
+}
+
+.promo-title {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  color: var(--primary-light-color);
+}
+
+.promo-text {
+  margin-bottom: 16px;
+  color: var(--primary-light-color);
+}

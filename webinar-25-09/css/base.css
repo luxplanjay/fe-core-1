@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  min-height: 100vh;
+  background-color: #fefefe;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}

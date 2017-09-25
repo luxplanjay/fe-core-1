@@ -1,0 +1,15 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  font-size: 36px;
+  text-transform: uppercase;
+}

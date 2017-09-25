@@ -1,0 +1,29 @@
+.page-footer {
+  padding: 80px 0;
+}
+
+.footer-socials {
+  display: flex;
+}
+
+.footer-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+
+.bg-google_plus {
+  background: url('../img/footer/footer-icons.png') -10px -10px;
+}
+
+.bg-linkedin {
+    background: url('../img/footer/footer-icons.png') -94px -10px;
+}
+
+.bg-twitter {
+  background: url('../img/footer/footer-icons.png') -10px -94px;
+}
+
+.bg-facebook {
+  background: url('../img/footer/footer-icons.png') -94px -94px;
+}

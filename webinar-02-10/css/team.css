@@ -1,0 +1,90 @@
+.team .section-title {
+  color: #292f36;
+}
+
+.team-member {
+  position: relative;
+  width: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-card {
+  flex-grow: 1;
+}
+
+.team-member:hover > .team-socials {
+  display: block;
+}
+
+.team-member:hover .member-descr {
+  background-color: #3a454d;
+}
+
+.team-member:hover .member-descr {
+  background-color: #3a454d;
+  color: #fff;
+}
+
+.team-member:hover .member-pos {
+  color: #fff;
+}
+
+.team-member:hover .member-img {
+  filter: opacity(0.8);
+}
+
+.member-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.member-descr {
+  background-color: var(--secondary-light-color);
+  color: #fefefe;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+  padding: 10px 0;
+  color: #292f36;
+}
+
+.member-pos {
+  display: block;
+  color: #8d8f92;
+  text-transform: capitalize;
+}
+
+.team-socials {
+  display: none;
+  position: absolute;
+}
+
+.icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background-size: cover;
+  background-color: #3a454d;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon:hover {
+  background-color: #4e5a62;
+}
+
+.icon-facebook {
+  background-image: url(../img/team/facebook.svg);
+}
+
+.icon-linkedin {
+  background-image: url(../img/team/linkedin.svg);
+}
+
+.icon-twitter {
+  background-image: url(../img/team/twitter.svg);
+}

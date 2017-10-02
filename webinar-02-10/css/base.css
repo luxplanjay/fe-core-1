@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  min-height: 100vh;
+  background-color: #fefefe;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+
+.wrapper {
+  width: 75rem;
+  margin: auto;
+  padding: 0 1rem;
+}

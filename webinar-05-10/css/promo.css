@@ -2,8 +2,12 @@
   padding: 6rem 0;
 }
 
+.promo .button {
+  margin-right: 0.5rem;
+}
+
 .promo-article {
-  width: 38rem;
+  width: 50%;
   margin: auto;
 }
 

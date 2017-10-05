@@ -3,6 +3,7 @@
 }
 
 .gallery-item {
+  display: block;
   position: relative;
   flex-basis: 32%;
   margin-bottom: 1.5rem;

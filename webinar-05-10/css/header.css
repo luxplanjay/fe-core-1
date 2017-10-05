@@ -1,0 +1,40 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.logo {
+  display: inline-block;
+  height: 5rem;
+  width: 5rem;
+  background-image: url(../img/logo.png);
+  background-size: cover;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+  transition: all 1s ease-out;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu-link {
+  border: 0.0625rem solid transparent;
+  border-radius: 0.125rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary-light-color);
+}
+
+.menu-link:hover {
+  border: 0.0625rem solid var(--primary-light-color);
+  transition: all 0.5s ease-out;
+}

@@ -1,0 +1,39 @@
+.feedback-article {
+  flex-basis: 50%;
+}
+
+.feedback-article-title {
+  margin-bottom: 1rem;
+  color: var(--secondary-dark-color);
+}
+
+.feedback-article-text {
+  color: var(--secondary-dark-color);
+}
+
+.feedback-form {
+  text-align: center;
+  flex-basis: 40%;
+  padding: 1rem;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 0.125rem;
+}
+
+.feedback-form-input,
+.feedback-form-textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+  margin-bottom: 1rem;
+  resize: none;
+  color: var(--secondary-dark-color);
+  border: 0.125rem solid #bbb;
+  border-radius: 0.125rem;
+}
+
+.feedback-form-input:focus,
+.feedback-form-textarea:focus {
+  border: 0.125rem solid var(--accent-color);
+  border-radius: 0.125rem;
+  outline: none;
+}

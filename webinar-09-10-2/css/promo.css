@@ -1,0 +1,21 @@
+.promo {
+  padding: 6rem 0;
+}
+
+.promo .button {
+  margin-right: 0.5rem;
+}
+
+.promo-article {
+}
+
+.promo-title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: var(--primary-light-color);
+}
+
+.promo-text {
+  margin-bottom: 1rem;
+  color: var(--primary-light-color);
+}

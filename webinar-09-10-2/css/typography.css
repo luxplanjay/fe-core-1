@@ -1,0 +1,69 @@
+/*
+  font-family
+ */
+
+h1 {
+  font-family: Aladin;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Bebas, sans-serif;
+}
+
+p,
+input[type="text"],
+label,
+textarea {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a,
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/*
+  font-sizes
+ */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.125rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+input[type="text"],
+label,
+textarea {
+  font-size: 1.125rem;
+}
+
+a,
+button {
+  font-size: 1rem;
+}

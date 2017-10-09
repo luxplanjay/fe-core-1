@@ -1,0 +1,12 @@
+@import 'base.css';
+@import 'mobile.css';
+@import 'tablet.css';
+@import 'desktop.css';
+/* @import 'mobile.css';
+@import 'tablet.css';
+@import 'desktop.css'; */
+/* min-width 480px - при ширине вьюпорта 480px И шире (от 480px)*/
+/* max-width 480px - при ширине вьюпорта 480px И уже (до 480px)*/
+/* min-width 480px and max-width: 768px - при ширине вьюпорта от 480 до 768*/
+
+

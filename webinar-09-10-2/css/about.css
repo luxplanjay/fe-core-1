@@ -1,0 +1,20 @@
+.article {
+  flex-basis: 32%;
+  color: var(--primary-light-color);
+}
+
+.article-img {
+  margin-bottom: 1.5rem;
+}
+
+.article-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.875rem;
+}
+
+.article-text {
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+  max-height: calc(1.125rem * 1.5 * 6);
+  overflow: hidden;
+}

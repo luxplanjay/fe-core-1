@@ -1,0 +1,19 @@
+.section {
+  padding: 3.75rem 0;
+}
+
+.section-body {
+}
+
+.section-title {
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+
+.section-title--light {
+  color: var(--primary-light-color);
+}
+
+.section-title--dark {
+  color: var(--primary-dark-color);
+}

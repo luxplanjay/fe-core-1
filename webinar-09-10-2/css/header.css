@@ -1,0 +1,56 @@
+.page-header {
+  padding: 1rem 0;
+}
+
+.logo {
+  display: none;
+  height: 5rem;
+  width: 5rem;
+  background-image: url(../img/logo.png);
+  background-size: cover;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+  transition: all 1s ease-out;
+}
+
+@media (min-width: 768px)  {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    display: block;
+  }
+}
+
+.menu {
+  list-style: none;
+}
+
+@media (min-width: 480px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.menu-link {
+  display: block;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.125rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary-light-color);
+  text-align: center;
+}
+
+.menu-link:hover {
+  border: 0.0625rem solid var(--primary-light-color);
+  transition: all 0.5s ease-out;
+}

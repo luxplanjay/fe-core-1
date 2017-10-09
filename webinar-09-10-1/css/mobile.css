@@ -1,0 +1,14 @@
+.gallery-item {
+  background-color: orange;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .gallery-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+

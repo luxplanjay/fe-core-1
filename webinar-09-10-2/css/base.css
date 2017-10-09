@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page {
+  min-height: 100vh;
+  background-color: #fefefe;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  max-width: 75rem;
+  min-width: 20rem;
+  margin: auto;
+}
+
+.wrapper {
+}
+
+.wrapper--gradient {
+  background: linear-gradient(to right, #1B1B1E, #373F51);
+}
+
+.wrapper--img {
+  background-image: url(../img/promo-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper--dark {
+  background-color: var(--secondary-dark-color);
+}

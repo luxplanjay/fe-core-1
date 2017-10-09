@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.125rem;
+  color: #F4F7F5;
+  border: 1px solid #F4F7F5;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.button--hover:hover {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.button--accent {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.button--scale:hover {
+  transform: scale(1.25);
+}

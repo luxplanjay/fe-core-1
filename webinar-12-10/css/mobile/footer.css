@@ -10,7 +10,7 @@
   display: block;
   width: 64px;
   height: 64px;
-  background-image: url('../img/footer/footer-icons.png');
+  background-image: url('../../img/footer/footer-icons.png');
 }
 
 .bg-google_plus {

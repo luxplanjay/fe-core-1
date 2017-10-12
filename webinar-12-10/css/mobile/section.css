@@ -1,8 +1,5 @@
 .section {
-  padding: 3.75rem 0;
-}
-
-.section-body {
+  padding: 3.75rem 0.5rem;
 }
 
 .section-title {

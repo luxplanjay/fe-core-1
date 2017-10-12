@@ -13,14 +13,6 @@
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
-  .button {
-    display: block;
-    width: 95%;
-    margin: auto;
-  }
-}
-
 .button:hover {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
@@ -38,4 +30,13 @@
 
 .button--scale:hover {
   transform: scale(1.25);
+}
+
+/* Media */
+@media (max-width: 480px) {
+  .button {
+    display: block;
+    width: 95%;
+    margin: auto;
+  }
 }

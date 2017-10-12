@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+  .gallery .section-body {
+    flex-wrap: wrap;
+  }
+
+  .gallery-item {
+    flex-basis: 32%;
+  }
+}

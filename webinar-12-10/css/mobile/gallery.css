@@ -1,11 +1,5 @@
-.gallery .section-body {
-  flex-wrap: wrap;
-}
-
 .gallery-item {
-  display: block;
   position: relative;
-  flex-basis: 32%;
   margin-bottom: 1.5rem;
   text-align: center;
   transition: transform 0.2s linear;

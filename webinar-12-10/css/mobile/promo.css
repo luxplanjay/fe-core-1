@@ -1,12 +1,9 @@
 .promo {
-  padding: 6rem 0;
+  padding: 6rem 0.5rem;
 }
 
 .promo .button {
   margin-right: 0.5rem;
-}
-
-.promo-article {
 }
 
 .promo-title {
@@ -18,4 +15,14 @@
 .promo-text {
   margin-bottom: 1rem;
   color: var(--primary-light-color);
+}
+
+
+/* Media */
+
+@media (max-width: 768px) {
+  .promo-article {
+    margin: auto;
+    text-align: center;
+  }
 }

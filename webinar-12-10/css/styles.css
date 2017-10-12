@@ -1,8 +1,4 @@
-@import 'fonts.css';
-@import 'typography.css';
-@import 'vars.css';
-@import 'base.css';
-@import 'button.css';
+@import 'base/base.css';
 @import 'mobile/mobile.css';
 @import 'tablet/tablet.css';
 @import 'desktop/desktop.css';

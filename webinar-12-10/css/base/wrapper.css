@@ -1,0 +1,14 @@
+.wrapper--gradient {
+  background: linear-gradient(to right, #1B1B1E, #373F51);
+}
+
+.wrapper--img {
+  background-image: url(../../img/promo-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper--dark {
+  background-color: var(--secondary-dark-color);
+}

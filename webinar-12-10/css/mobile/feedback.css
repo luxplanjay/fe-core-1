@@ -1,0 +1,37 @@
+.feedback-article {
+}
+
+.feedback-article-title {
+  margin-bottom: 1rem;
+  color: var(--secondary-dark-color);
+}
+
+.feedback-article-text {
+  color: var(--secondary-dark-color);
+}
+
+.feedback-form {
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.125rem;
+}
+
+.feedback-form-input,
+.feedback-form-textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  resize: none;
+  color: var(--secondary-dark-color);
+  border: 0.125rem solid #bbb;
+  border-radius: 0.125rem;
+}
+
+.feedback-form-input:focus,
+.feedback-form-textarea:focus {
+  border: 0.125rem solid var(--accent-color);
+  border-radius: 0.125rem;
+  outline: none;
+}

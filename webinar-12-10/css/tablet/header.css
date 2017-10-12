@@ -1,0 +1,10 @@
+@media (min-width: 768px)  {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    display: block;
+  }
+}

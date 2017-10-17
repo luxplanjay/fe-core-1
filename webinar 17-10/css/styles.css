@@ -1,0 +1,33 @@
+/* img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+.container-width {
+  max-width: 75rem;
+  min-width: 20rem;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu li {
+  text-transform: uppercase;
+  outline: 1px solid #333;
+}
+
+.sidebar {
+  min-height: 200px;
+  background-color: orange;
+}
+
+/* Media */
+@media (min-width: 576px) {
+  .menu {
+    display: flex;
+  }
+}

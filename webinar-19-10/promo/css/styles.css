@@ -18,7 +18,7 @@ body {
 
 .overlay {
 	height: 50vh;
-	/* clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 0% 100%); */
+	clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 0% 100%);
 	background: radial-gradient(#1cb5e0, #000046);
 }
 

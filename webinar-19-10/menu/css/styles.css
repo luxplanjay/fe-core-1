@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.menu {
+  position: relative;
+  margin: auto;
+  width: 40rem;
+  height: 40rem;
+}
+
+.menu-item {
+  position: absolute;
+  display: block;
+  width: 49%;
+  height: 49%;
+  text-decoration: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.9);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.menu-item:hover {
+  filter: none;
+}
+
+.menu-item:hover>span {
+  left: 50%;
+}
+
+.menu-item span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.25s linear;
+}
+
+.menu-item--top {
+  left: 50%;
+  transform: translatex(-50%);
+  background-image: url(https://placeimg.com/300/300/tech);
+}
+
+.menu-item--top span {
+  background: rgba(0, 0, 200, 0.5);
+}
+
+.menu-item--right {
+  right: 0;
+  top: 50%;
+  transform: translatey(-50%);
+  background-image: url(https://placeimg.com/300/300/animals);
+}
+
+.menu-item--right span {
+  background: rgba(200, 0, 0, 0.5);
+}
+
+.menu-item--bottom {
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: 0;
+  background-image: url(https://placeimg.com/300/300/arch);
+}
+
+.menu-item--bottom span {
+  background: rgba(0, 200, 0, 0.5);
+}
+
+.menu-item--left {
+  left: 0;
+  top: 50%;
+  transform: translatey(-50%);
+  background-image: url(https://placeimg.com/300/300/nature);
+}
+
+.menu-item--left span {
+  background: rgba(200, 100, 0, 0.5);
+}

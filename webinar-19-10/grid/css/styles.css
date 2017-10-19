@@ -1,0 +1,98 @@
+.box {
+  height: 200px;
+}
+
+.box--pink {
+  background-color: #F8BBD0;
+}
+
+.box--darkpink {
+  background-color: #C2185B;
+}
+
+.box--lightblue {
+  background-color: #B3E5FC;
+}
+
+.box--green {
+  background-color: #76FF03;
+}
+
+.box--orange {
+  background-color: #FF6D00;
+}
+
+
+/* CONTENT */
+
+.top-content,
+.bottom-content,
+.footer {
+  margin-top: 2rem;
+}
+
+.top-content [class*="col-"],
+.bottom-content [class*="col-"] {
+  margin-top: 1rem;
+}
+
+.top-content [class*="col-"]:first-child,
+.bottom-content [class*="col-"]:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .footer [class*="col-"]:last-child {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-content [class*="col-"]:nth-child(2),
+  .bottom-content [class*="col-"]:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-content [class*="col-"] {
+    margin-top: 0;
+  }
+}
+
+
+/* Atomic CSS */
+
+
+/*.mt-0 {
+  margin-top: 0;
+}
+
+ .mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+
+@media (min-width: 768px) {
+  .mt-md-0 {
+    margin-top: 0;
+  }
+
+  .mt-md-1 {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mt-xl-0 {
+    margin-top: 0;
+  }
+} */

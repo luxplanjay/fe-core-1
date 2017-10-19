@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	font-family: "Roboto", sans-serif;
+	background-color: #fff;
+}
+
+.promo {
+	position: relative;
+	width: 30rem;
+	margin: auto;
+}
+
+.overlay {
+	height: 50vh;
+	/* clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 0% 100%); */
+	background: radial-gradient(#1cb5e0, #000046);
+}
+
+.overlay h1 {
+	position: relative;
+	top: 20%;
+	font-size: 3rem;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.slider {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translatex(-50%);
+	width: 80%;
+}

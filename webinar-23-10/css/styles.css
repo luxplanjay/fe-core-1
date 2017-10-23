@@ -1,0 +1,40 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.box {
+  width: 480px;
+  height: 320px;
+  background: url('https://placeimg.com/480/320/nature') no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+  .box {
+    background: url('https://placeimg.com/960/640/nature') no-repeat;
+  }
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon {
+  width: 10rem;
+  height: 10rem;
+  fill: #fff;
+}
+
+.icon:hover {
+  fill: orange;
+}

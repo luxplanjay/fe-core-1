@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webinar 26-10</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!--
+    Шпаргалка по bem:
+
+    Имена записываются в нижнем регистре
+    Слова в именах объектов BEM разделяются дефисом -
+    Имя элемента отделено от имени блока двойным подчеркиванием __
+    Модификаторы отделяются двойными дефисами --
+ -->
+
+  <ul class="menu">
+  <li class="menu__item">
+    <a class="menu__link menu__link--hover" href="#">link 1</a>
+  </li>
+  <li class="menu__item">
+    <a class="menu__link menu__link--hover" href="#">link 2</a>
+  </li>
+  <li class="menu__item">
+    <a class="menu__link menu__link--hover" href="#">link 3</a>
+  </li>
+  <li class="menu__item">
+    <a class="menu__link menu__link--hover" href="#">link 4</a>
+  </li>
+</ul>
+
+  <button class="btn btn--hover">
+    <svg class="btn__icon">
+      <use href="img/sign-in.svg#root"></use>
+    </svg>
+    log in
+  </button>
+
+  <button class="btn btn--green">
+    <svg class="btn__icon btn__icon--right">
+      <use href="img/like.svg#root"></use>
+    </svg>
+    like
+  </button>
+
+  <button class="btn btn--red">decline</button>
+
+  <!-- GALLERY -->
+  <div class="container">
+    <div class="blog-post" style="display: flex;">
+      <div class="blog-post__userinfo">
+          <div class="user-card">
+              <img class="user-card__img" src="img/mango.jpg" alt="">
+              <p class="user-card__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, hic.</p>
+              <div class="user-card__socials">
+                <a href="" class="user-card__link user-card__link--hover">
+                  <svg class="user-card__icon">
+                    <use href="img/facebook.svg#root"></use>
+                  </svg>
+                </a>
+                <a href="" class="user-card__link user-card__link--hover">
+                  <svg class="user-card__icon">
+                      <use href="img/twitter.svg#root"></use>
+                  </svg>
+                </a>
+                <a href="" class="user-card__link user-card__link--last user-card__link--hover">
+                  <svg class="user-card__icon">
+                      <use href="img/linkedin.svg#root"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+      </div>
+      <div class="blog-post__body">
+        <p class="blog-post__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur id labore, ipsa totam minima, esse facere asperiores veniam impedit itaque, ut quis reprehenderit iure corrupti? Nostrum voluptates alias molestiae quod.</p>
+      </div>
+    </div>
+    <section class="gallery">
+      <h2 class="gallery__title">Gallery title</h2>
+      <div class="gallery__body">
+        <div class="gallery__item">
+          <div class="user-card">
+            <img class="user-card__img" src="img/mango.jpg" alt="">
+            <p class="user-card__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, hic.</p>
+            <div class="user-card__socials">
+              <a href="" class="user-card__link user-card__link--hover">
+                <svg class="user-card__icon">
+                  <use href="img/facebook.svg#root"></use>
+                </svg>
+              </a>
+              <a href="" class="user-card__link user-card__link--hover">
+                <svg class="user-card__icon">
+                    <use href="img/twitter.svg#root"></use>
+                </svg>
+              </a>
+              <a href="" class="user-card__link user-card__link--last user-card__link--hover">
+                <svg class="user-card__icon">
+                    <use href="img/linkedin.svg#root"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://placeimg.com/640/480/nature" alt="">
+        </div>
+        <div class="gallery__item">
+          <img src="https://placeimg.com/640/480/nature" alt="">
+        </div>
+        <div class="gallery__item">
+          <img src="https://placeimg.com/640/480/nature" alt="">
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+
+</html>

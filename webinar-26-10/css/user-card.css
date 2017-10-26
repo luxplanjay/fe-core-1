@@ -1,0 +1,35 @@
+.user-card {
+
+}
+
+.user-card__img {
+  margin-bottom: 1rem;
+}
+
+.user-card__descr {
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.user-card__socials {
+  display: flex;
+  justify-content: center;
+}
+
+.user-card__link {
+  margin-right: 0.5rem;
+}
+
+.user-card__link--last:last-child {
+  margin-right: 0;
+}
+
+.user-card__link--hover:hover > .user-card__icon {
+  fill: orange;
+}
+
+.user-card__icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #fff;
+}

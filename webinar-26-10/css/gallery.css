@@ -1,0 +1,18 @@
+.gallery {
+  padding: 2rem;
+}
+
+.gallery__title {
+  font-size: 2rem;
+}
+
+.gallery__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery__item {
+  flex-basis: 49%;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,99 @@
+.card {
+  font-size: 20px; }
+
+.hello {
+  background-color: #fff; }
+
+* {
+  box-sizing: border-box; }
+
+.qwerrty {
+  font-size: 40px; }
+
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  background-color: #fff; }
+
+.container {
+  max-width: 960px;
+  margin: auto; }
+
+.article-text {
+  color: #414141; }
+
+.article-title {
+  text-transform: uppercase; }
+
+.article-text {
+  font-size: 18px; }
+  .article-text:hover {
+    background-color: #414141;
+    color: #fff; }
+    .article-text:hover::before {
+      background-color: #009688; }
+  .article-text::before {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    content: '\2014'; }
+
+.artilce-link {
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.btn, .btn-primary, .btn-secondary {
+  border: 4px solid #ccc;
+  padding: 6px 12px;
+  color: #333;
+  background: #fff; }
+
+.btn-primary {
+  border-color: red; }
+
+.btn-secondary {
+  border-color: green; }
+
+.msg-success, .msg-error, .msg-warning {
+  background-color: #fff;
+  color: #414141;
+  padding: 10px;
+  font-size: 20px; }
+
+.msg-success {
+  background-color: #4CAF50; }
+
+.msg-error {
+  background-color: #F44336; }
+
+.msg-warning {
+  background-color: #FFEB3B; }
+
+/*qweqweqwe
+qweqwe
+qwe */
+.article-text {
+  font-size: 2rem; }
+
+.icon-facebook, .icon-linkedin, .icon-twitter {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem; }
+
+.icon-facebook {
+  background-image: url(../img/social-icons/facebook.png); }
+
+.icon-linkedin {
+  background-image: url(../img/social-icons/linkedin.png); }
+
+.icon-twitter {
+  background-image: url(../img/social-icons/twitter.png); }
+
+/*
+  If you have to know the iteration index, use a @for loop.
+  For instance, when generating a series of :nth-child or
+  :nth-of-type selectors, a @for loop is the best choice
+  since all you need is an index. On the other hand, when
+  looping over a list of a map, it is usually more convenient
+  to opt for an @each loop rather than a @for loop.
+*/

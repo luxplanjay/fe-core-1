@@ -1,0 +1,14 @@
+{
+  "name": "webinar-30-10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch sass -o css"
+  },
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

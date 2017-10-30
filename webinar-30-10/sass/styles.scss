@@ -1,0 +1,334 @@
+@import 'card';
+@import 'hello';
+
+* {
+  box-sizing: border-box;
+}
+
+.qwerrty {
+  font-size: 40px;
+}
+
+
+//===== What is Sass?
+//===== Compiling Sass to CSS
+//===== Declaring, Using  and Naming Variables
+$primary-dark-color: #414141;
+$primary-light-color: #fff;
+$primary-accent-color: #009688;
+$container-width: 960px;
+$primary-font-stack: Roboto,
+sans-serif;
+$secondary-font-stack: 'Open Sans',
+sans-serif;
+body {
+  font-family: $primary-font-stack;
+  line-height: 1.5;
+  background-color: $primary-light-color;
+}
+
+.container {
+  max-width: $container-width;
+  margin: auto;
+}
+
+.article-text {
+  color: $primary-dark-color;
+}
+
+//===== Nested Selectors
+// .article {
+//   h2 {
+//     font-size: 34px;
+//   }
+//   p {
+//     font-size: 24px;
+//   }
+// }
+//===== Use the Ampersand to Reference Parent Selectors
+.article-title {
+  text-transform: uppercase;
+}
+
+.article-text {
+  font-size: 18px;
+  &:hover {
+    background-color: $primary-dark-color;
+    color: $primary-light-color;
+    &::before {
+      background-color: $primary-accent-color;
+    }
+  }
+  &::before {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    content: '\2014';
+  }
+}
+
+.artilce-link {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+//===== Introducing Mixins
+// What Is a Sass Mixin?
+// How to Create a Sass Mixin
+// How to Include a Sass Mixin
+// Arguments in Sass Mixins
+// Default Values in Sass Mixins
+
+// @mixin font-settings($fsize: 16px, $lheight: 1.5) {
+//   font-size: $fsize;
+//   line-height: $lheight;
+// }
+// .article-text {
+//   @include font-settings();
+// }
+
+// @mixin pseudo($display: block, $content: '') {
+//   display: $display;
+//   content: $content;
+// }
+
+// div::after {
+//   @include pseudo(inline-block, '\2107');
+// }
+
+//=== Background Image Mixin
+// @mixin background-image($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
+//   background-image: url($path);
+//   background-size: $size;
+//   background-repeat: $repeat;
+//   background-position: $pos;
+// }
+
+// .article-icon {
+//   display: inline-block;
+//   width: 8rem;
+//   height: 8rem;
+//   @include background-image('../img/octocat.svg', 90%, repeat-x, 50% 50%);
+// }
+
+
+//===== Extend the Properties of Selectors
+.btn {
+  border: 4px solid #ccc;
+  padding: 6px 12px;
+  color: #333;
+  background: #fff;
+}
+
+.btn-primary {
+  @extend .btn;
+  border-color: red;
+}
+
+.btn-secondary {
+  @extend .btn;
+  border-color: green;
+}
+//===== Extend Placeholder Selectors
+
+%message {
+  background-color: $primary-light-color;
+  color: $primary-dark-color;
+  padding: 10px;
+  font-size: 20px;
+}
+.msg-success {
+  @extend %message;
+  background-color: #4CAF50;
+}
+.msg-error {
+  @extend %message;
+  background-color: #F44336;
+}
+.msg-warning {
+  @extend %message;
+  background-color: #FFEB3B;
+}
+//===== Using Comments
+/*qweqweqwe
+qweqwe
+qwe */
+// qweqweqwe
+
+//===== Nesting Media Queries
+// html {
+//   font-size: 16px;
+//   @media (min-width: 768px) {
+//     font-size: 30px;
+//   }
+// }
+
+// .article-title {
+//   color: red;
+//   @media (min-width: 768px) {
+//     color: blue;
+//   }
+//   @media (min-width: 1024px) {
+//     color: yellow;
+//   }
+// }
+
+//===== Color Functions
+// $color: red;
+// body {
+//    background-color: lighten($color, 20%);
+//    background-color: darken($color, 20%);
+//    background-color: rgba(#ccff33, 0.3);
+// }
+
+//===== Interpolation
+// $qwerty: '5';
+// // #{$qwerty}
+// span {
+//   content: 'random #{$qwerty}';
+// }
+
+//===== Custom Functions - Pixels to Rem Function
+$base-font-size: 20px;
+
+@function px-to-rem($val) {
+  $remSize: $val / $base-font-size;
+  @return #{$remSize}rem;
+}
+
+.article-text {
+  font-size: px-to-rem(40px);
+}
+
+//===== Add Conditional Logic to Your Stylesheets
+// $num: 5;
+
+// .selector {
+//   @if $num > 5 {
+//     background-color: red;
+//   }
+//   @else if $num < 5 {
+//     background-color: green;
+//   }
+//   @else {
+//     background-color: yellow;
+//   }
+// }
+
+//===== Create a Mixin for Flexbox Layout
+// @mixin center-flex($type: 'all') {
+//   display: flex;
+
+//   @if $type=='all' {
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   @else if $type=='hor' {
+//     justify-content: center;
+//   }
+//   @else if $type=='ver' {
+//     align-items: center;
+//   }
+// }
+
+// div {
+//   @include center-flex();
+// }
+
+
+//===== Write Loops with @for
+// to если нужно пройтись по числам от и до
+// through если нужно пройтись по числам от и до включительно
+
+// body {
+//   background-color: #333;
+// }
+
+// @for $i from 1 to 5 {
+//   .list li:nth-of-type(#{$i}) {
+//     color: hsl($i * 360 / 5, 75%, 75%);
+//   }
+// }
+
+//===== Loop Through Lists with @each
+// @each если нужно пройтись по списку значений
+
+%icon {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+}
+
+$icons: facebook, linkedin, twitter;
+
+// @each $icon in $icons {
+//   .icon-#{$icon} {
+//     @extend %icon;
+//     background-image: url(../img/socials/#{$icon}.svg);
+//   }
+// }
+
+@mixin generate-icons($baseclass, $list, $path, $ext) {
+  @each $icon in $list {
+    .#{$baseclass}#{$icon} {
+      @extend %icon;
+      background-image: url(#{$path}#{$icon}.#{$ext});
+    }
+  }
+}
+
+@include generate-icons('icon-', $icons, '../img/social-icons/', 'png');
+
+/*
+  If you have to know the iteration index, use a @for loop.
+  For instance, when generating a series of :nth-child or
+  :nth-of-type selectors, a @for loop is the best choice
+  since all you need is an index. On the other hand, when
+  looping over a list of a map, it is usually more convenient
+  to opt for an @each loop rather than a @for loop.
+*/
+
+//===== Storing Values in Maps
+// $headers: (
+//   h1: 2em,
+//   h2: 1.5em,
+//   h3: 1.2em
+// );
+// @each $header, $size in $headers {
+//   #{$header} {
+//     font-size: $size;
+//   }
+// }
+// $font-size: ( small: 14px,
+// medium: 16px,
+// large: 20px);
+// $line-height: ( small: 1,
+// medium: 1.5,
+// large: 2);
+// @mixin font-settings($size) {
+//   font-size: map-get($font-size, $size);
+//   line-height: map-get($line-height, $size)
+// }
+// .test {
+//   @include font-settings(small);
+// }
+// .another-test {
+//   @include font-settings(large);
+// }
+//===== Handling Errors with @error and @warn
+// functions
+// $colors: ( cool: #fff,
+// amazing: #f00,
+// glorious: #00f);
+// @function color($key) {
+//   @if map-has-key($colors,
+//   $key) {
+//     @return map-get($colors,
+//     $key);
+//   }
+//   @warn "Unknown `#{$key}` in $colors.";
+//   @return null;
+// }
+// p {
+//   background-color: color(glorious);
+// }
+//===== Separate Your Stylesheet Into Partials
